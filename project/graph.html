@@ -1,0 +1,106 @@
+<!--
+Boulder visualization
+Raoul Lieben
+Graph page
+-->
+
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8">
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.8/d3.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="/Eindproject/project/css/style.css">
+
+		<div class="container">
+			<h1>Boulder visualization</h1>
+			<ul class="nav nav-tabs" role="tablist">
+				<li><a href="index.html">Home</a></li>
+				<li class="active"><a href="graph.html">Graph</a></li>
+			</ul>
+		</div>
+
+		<div class="container">
+  			<div class="row">
+   				<div class = "col-sm-6"
+   					id = "frailnetwork">
+      				<h3>Frail brain network</h3>
+    			</div>
+    			<div class = "col-sm-6"
+   					id = "nonfrailnetwork">
+      				<h3>Non-frail brain network</h3>
+
+    			</div>
+    		</div>
+    		<div class = "row">
+    			<div class = "col-sm-4">
+    				<select id="order">
+		  				<option value="acs">Average correlation strength</option>
+		  				<option value="mod">Modularity values</option>
+					</select>
+    			</div>
+    			<div class = "col-sm-4"
+    				id = "checkboxsort">
+    				<div style- "text-align:center;">
+    					<input type="checkbox" id="checkbox"> Sort values barchart</div>
+  						<div id="graph">
+  					</div>
+  				</div>
+  				<div class="col-sm-4"
+					id = "option">
+					<input name="updateButton"
+               			type="button"
+                		class="btn btn-default"
+                		value="Unselect selection"
+                		onclick="unselectSelection()" />
+                </div>
+  			</div>
+    		<div class="row">
+   				<div class = "col-sm-6"
+   					id = "bcfrail">
+   					<h5>Average correlation strength/modularity value per node</h5>
+    			</div>
+    			<div class = "col-sm-6"
+   					id = "bcnonfrail">
+   					<h5>Average correlation strength/modularity value per node</h5>
+    			</div>
+    		</div>
+    		<div class="row">
+   				<div class = "col-sm-6"
+   					id = "hmfrail">
+      				<h3>Correlation matrix</h3>
+
+    			</div>
+    			<div class = "col-sm-6"
+   					id = "hmnonfrail">
+      				<h3>Correlation matrix</h3>
+
+    			</div>
+    		</div>
+    	</div>
+
+		<div id="tooltip" class="hidden">
+				<p><span id = "value1"></p>
+				<p><span id = "value2"></p>
+				<p><span id = "value3"></p>
+		</div>
+
+		<script src="https://d3js.org/d3.v4.min.js"></script>
+		<script src="https://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+		<script src="https://d3js.org/queue.v1.min.js"></script>
+
+
+		<script src="/Eindproject/project/scripts/mainscript.js"></script>
+		<script src="/Eindproject/project/scripts/interactiveClick.js"></script>
+		<script src="/Eindproject/project/scripts/makeNetwork.js"></script>
+		<script src="/Eindproject/project/scripts/makeBarchart.js"></script>
+		<script src="/Eindproject/project/scripts/makeHeatmap.js"></script>
+		<script src="/Eindproject/project/scripts/showTooltip.js"></script>
+		<script src="/Eindproject/project/scripts/dropdownSwitch.js"></script>
+
+
+	</head>
+	<body></body>
+</html>
