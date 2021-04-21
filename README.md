@@ -3,7 +3,7 @@ Copyright (c) 2018 Raoul Lieben
 ##### Name: Raoul Lieben
 ##### Content: To be specified
 
-Go to project: Github Pages Project: https://rlieben.github.io/boulder_vis
+Go to project: Github Pages Project: https://rlieben.github.io/boulder_visual
 
 
 # Visualization
