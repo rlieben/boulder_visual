@@ -12,7 +12,7 @@ Graph page
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.8/d3.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<link rel="stylesheet" href="/Eindproject/project/css/style.css">
+		<link rel="stylesheet" href="/project/css/style.css">
 
 		<div class="container">
 			<h1>Boulder visualization</h1>
@@ -23,30 +23,20 @@ Graph page
 		</div>
 
 		<div class="container">
-  			<div class="row">
-   				<div class = "col-sm-6"
-   					id = "frailnetwork">
-      				<h3>Frail brain network</h3>
-    			</div>
-    			<div class = "col-sm-6"
-   					id = "nonfrailnetwork">
-      				<h3>Non-frail brain network</h3>
-
-    			</div>
-    		</div>
     		<div class = "row">
     			<div class = "col-sm-4">
-    				<select id="order">
-		  				<option value="acs">Average correlation strength</option>
+						<p>Hoi</p>
+    				<!-- <select id="order">
+		  				<option value="acs">Hoi</option>
 		  				<option value="mod">Modularity values</option>
-					</select>
+					</select> -->
     			</div>
     			<div class = "col-sm-4"
-    				id = "checkboxsort">
-    				<div style- "text-align:center;">
+    				<!-- id = "checkboxsort">
+    				 <div style- "text-align:center;">
     					<input type="checkbox" id="checkbox"> Sort values barchart</div>
   						<div id="graph">
-  					</div>
+  					</div> -->
   				</div>
   				<div class="col-sm-4"
 					id = "option">
@@ -57,28 +47,6 @@ Graph page
                 		onclick="unselectSelection()" />
                 </div>
   			</div>
-    		<div class="row">
-   				<div class = "col-sm-6"
-   					id = "bcfrail">
-   					<h5>Average correlation strength/modularity value per node</h5>
-    			</div>
-    			<div class = "col-sm-6"
-   					id = "bcnonfrail">
-   					<h5>Average correlation strength/modularity value per node</h5>
-    			</div>
-    		</div>
-    		<div class="row">
-   				<div class = "col-sm-6"
-   					id = "hmfrail">
-      				<h3>Correlation matrix</h3>
-
-    			</div>
-    			<div class = "col-sm-6"
-   					id = "hmnonfrail">
-      				<h3>Correlation matrix</h3>
-
-    			</div>
-    		</div>
     	</div>
 
 		<div id="tooltip" class="hidden">
@@ -92,13 +60,11 @@ Graph page
 		<script src="https://d3js.org/queue.v1.min.js"></script>
 
 
-		<script src="/Eindproject/project/scripts/mainscript.js"></script>
-		<script src="/Eindproject/project/scripts/interactiveClick.js"></script>
-		<script src="/Eindproject/project/scripts/makeNetwork.js"></script>
-		<script src="/Eindproject/project/scripts/makeBarchart.js"></script>
-		<script src="/Eindproject/project/scripts/makeHeatmap.js"></script>
-		<script src="/Eindproject/project/scripts/showTooltip.js"></script>
-		<script src="/Eindproject/project/scripts/dropdownSwitch.js"></script>
+		<script src="/project/scripts/mainscript.js"></script>
+		<script src="/project/scripts/interactiveClick.js"></script>
+		<script src="/project/scripts/makePiechart.js"></script>
+		<script src="/project/scripts/showTooltip.js"></script>
+		<script src="/project/scripts/dropdownSwitch.js"></script>
 
 
 	</head>

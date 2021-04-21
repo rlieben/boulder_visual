@@ -18,8 +18,8 @@ window.onload = function(){
 	function updateGraph(error){
 		if (error) throw error;
 
-		d3.json('boulderdata.json', function(boulderdata){
-
+		d3.json('boulderdata.json', function(boulderdata2){
+			var boulderdata = [2, 4, 8, 10];
 			makePiechart(boulderdata);
 
 			d3.select("#order").on("change",function(){
